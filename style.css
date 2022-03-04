@@ -12,18 +12,20 @@ body {
 
 .container {
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px
+  gap: 20px
+}
+
+.tab-img-container {
+  flex: 45%;
 }
 
 .tab-img {
   display: none;
-  /* width: 100%;
-  max-width: 550px; */
-  flex: 30%;
+  width: 100%;
 }
 
 .tab-img__active {
@@ -31,7 +33,7 @@ body {
 }
 
 .tabs {
-  flex: 65%;
+  flex: 55%;
 }
 
 .tab__btn-container {
@@ -44,7 +46,7 @@ body {
 .btn {
   background-color: bisque;
   display: inline-block;
-  width: 25%;
+  width: 30%;
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
@@ -74,4 +76,15 @@ body {
 
 .tab-container__active {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .tab-img {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
 }

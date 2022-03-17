@@ -15,12 +15,13 @@ body {
   margin: 20px auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px
 }
 
 .tab-img-container {
-  flex: 45%;
+  margin-top: 55px;
+  flex: 0 0 45%;
 }
 
 .tab-img {
@@ -80,8 +81,14 @@ body {
 
 @media screen and (max-width: 768px) {
   .container {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
   }
+  .tab-img-container {
+    margin-top: 0;
+  }
+
   .tab-img {
     width: 100%;
     max-width: 450px;
